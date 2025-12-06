@@ -37,7 +37,7 @@ const ContactSection = () => {
           className="space-y-10"
         >
           <motion.div variants={itemVariants} className="text-center">
-            <p className="text-sm uppercase tracking-[0.3em] text-blue-500 mb-2">
+            <p className="text-lg font-medium uppercase tracking-[0.3em] text-indigo-500 mb-2">
               Contact
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold">
@@ -66,7 +66,7 @@ const ContactSection = () => {
                   return (
                     <li key={item.label} className="flex items-start gap-3">
                       <span className="mt-1 p-1.5 rounded-lg bg-blue-500/10">
-                        <Icon size={18} className="text-blue-500" />
+                        <Icon size={18} className="text-indigo-500" />
                       </span>
                       <div>
                         <p className="text-xs uppercase tracking-wide text-gray-400">
@@ -96,7 +96,7 @@ const ContactSection = () => {
                     href="https://www.linkedin.com/in/wendy-vo/"
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center justify-center p-2 rounded-full border border-blue-500/60 hover:bg-blue-500/10 transition"
+                    className="inline-flex items-center justify-center p-2 rounded-full border border-indigo-500/60 hover:bg-indigo-500/10 transition"
                   >
                     <FiLinkedin size={18} />
                   </a>
@@ -117,11 +117,9 @@ const ContactSection = () => {
                     formData.get("subject") || "Portfolio enquiry"
                   );
                   const body = encodeURIComponent(
-                    `Hi Wendy,%0D%0A%0D%0A${formData.get(
-                      "message"
-                    )}%0D%0A%0D%0AFrom: ${formData.get("name")} <${
-                      formData.get("email") || "no-email"
-                    }>`
+                    `Hi Wendy,${formData.get("message")} From: ${formData.get(
+                      "name"
+                    )} <${formData.get("email") || "no-email"}>`
                   );
                   window.location.href = `mailto:uyen199247@gmail.com?subject=${subject}&body=${body}`;
                 }}
@@ -135,7 +133,7 @@ const ContactSection = () => {
                     <input
                       name="name"
                       required
-                      className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-500"
                     />
                   </div>
                   <div>
@@ -146,7 +144,7 @@ const ContactSection = () => {
                       type="email"
                       name="email"
                       required
-                      className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500"
+                      className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-500"
                     />
                   </div>
                 </div>
@@ -157,7 +155,7 @@ const ContactSection = () => {
                   </label>
                   <input
                     name="subject"
-                    className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-500"
                     placeholder="Internship opportunity, collaboration, etc."
                   />
                 </div>
@@ -170,13 +168,13 @@ const ContactSection = () => {
                     name="message"
                     required
                     rows={4}
-                    className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                    className="w-full rounded-xl border border-gray-700 bg-transparent px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500 hover:bg-blue-600 text-sm font-medium transition"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500 hover:bg-indigo-600 text-sm font-medium transition"
                 >
                   <Mail size={16} />
                   <span>Send message</span>

@@ -34,7 +34,7 @@ const SkillsSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="mb-12 text-center"
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-blue-500 mb-2">
+          <p className="text-lg font-medium uppercase tracking-[0.3em] text-indigo-500 mb-2">
             Skills
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold">
@@ -66,7 +66,7 @@ const SkillsSection = () => {
               >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="p-2 rounded-xl bg-blue-500/10">
-                    <Icon className="text-blue-500" size={22} />
+                    <Icon className="text-indigo-500" size={22} />
                   </span>
                   <div>
                     <h3 className="font-semibold text-lg">{category.title}</h3>

@@ -24,6 +24,8 @@ import PROJECT_IMG_3 from "../assets/images/travelImg.png";
 import PROJECT_IMG_4 from "../assets/images/scheduler-main.PNG";
 import PROJECT_IMG_5 from "../assets/images/burger.png";
 import PROJECT_IMG_6 from "../assets/images/emp-directory.png";
+import PROJECT_IMG_7 from "../assets/images/uni-circle.png";
+import PROJECT_IMG_8 from "../assets/images/MCBA_Banking.png";
 
 export const SKILLS_CATEGORY = [
   {
@@ -186,6 +188,52 @@ export const PROJECTS = [
     featured: false,
     category: "Frontend",
   },
+  {
+    id: 7,
+    title: "UniCircle – Student Marketplace App",
+    description:
+      "An iOS marketplace app designed for university students to buy and sell items within their campus community. Built with SwiftUI and MVVM, UniCircle integrates Stripe for payments, Firebase for data, and supports deep links and widgets.",
+    image: PROJECT_IMG_7,
+    tags: ["SwiftUI", "iOS", "Firebase", "Stripe", "MVVM", "SwiftData"],
+    liveURL: "", // No public TestFlight/App Store yet
+    githubURL: null, // 🔒 Private – uni assignment
+    featured: true,
+    category: "Mobile",
+    isPrivate: true, // (optional) if you want to flag it
+  },
+  {
+    id: 8,
+    title: "MCBA – Internet Banking System",
+    description:
+      "A .NET-based console and web banking system built for the fictional 'Most Common Bank of Australia'. Includes secure login, account management, transfers, bill payments, and SQL Server persistence with layered architecture and dependency injection.",
+    image: PROJECT_IMG_8,
+    tags: [
+      "C#",
+      ".NET",
+      "ASP.NET MVC",
+      "SQL Server",
+      "ADO.NET",
+      "Clean Architecture",
+    ],
+    liveURL: "",
+    githubURL: null,
+    featured: false,
+    category: "Full Stack",
+    isPrivate: true,
+  },
+  // {
+  //   id: 9,
+  //   title: "IoT Classroom Management System",
+  //   description:
+  //     "A distributed IoT system using multiple Raspberry Pis (Master, Agent, Room) to manage classroom bookings, room access, and status displays. Uses Flask, MQTT, and a cloud-hosted MySQL database to coordinate devices and web interfaces.",
+  //   image: IOT_IMG,
+  //   tags: ["Python", "Flask", "MQTT", "Raspberry Pi", "MySQL", "IoT"],
+  //   liveURL: "",
+  //   githubURL: null,
+  //   featured: false,
+  //   category: "IoT",
+  //   isPrivate: true,
+  // },
 ];
 export const PASSIONS = [
   {

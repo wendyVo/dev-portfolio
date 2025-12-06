@@ -35,7 +35,7 @@ const AboutSection = () => {
           className="space-y-8"
         >
           <motion.div variants={itemVariants} className="text-center">
-            <p className="text-sm uppercase tracking-[0.3em] text-blue-500 mb-2">
+            <p className="text-lg font-medium uppercase tracking-[0.3em] text-indigo-500 mb-2">
               About
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold">

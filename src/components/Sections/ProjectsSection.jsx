@@ -35,7 +35,7 @@ const ProjectsSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="mb-12 text-center"
         >
-          <p className="text-sm uppercase tracking-[0.3em] text-blue-500 mb-2">
+          <p className="text-lg font-medium uppercase tracking-[0.3em] text-indigo-500 mb-2">
             Projects
           </p>
           <h2 className="text-3xl md:text-4xl font-semibold">
@@ -114,7 +114,7 @@ const ProjectsSection = () => {
                       href={project.githubURL}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-sm hover:text-blue-400 transition-colors"
+                      className="inline-flex items-center gap-2 text-sm hover:text-indigo-400 transition-colors"
                     >
                       <FiGithub size={18} />
                       <span>Code</span>
@@ -125,7 +125,7 @@ const ProjectsSection = () => {
                       href={project.liveURL}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-sm hover:text-blue-400 transition-colors"
+                      className="inline-flex items-center gap-2 text-sm hover:text-indigo-400 transition-colors"
                     >
                       <FiExternalLink size={18} />
                       <span>Live demo</span>
