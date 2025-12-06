@@ -2,6 +2,11 @@ import React from "react";
 import { ThemeProvider } from "./context/ThemeContext";
 import Navbar from "./components/Navbar.jsx";
 import HeroSection from "./components/Sections/HeroSection.jsx";
+import SkillsSection from "./components/Sections/SkillsSection.jsx";
+import ProjectsSection from "./components/Sections/ProjectsSection.jsx";
+import AboutSection from "./components/Sections/AboutSection.jsx";
+import ContactSection from "./components/Sections/ContactSection.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -9,6 +14,11 @@ const App = () => {
       <div>
         <Navbar />
         <HeroSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <AboutSection />
+        <ContactSection />
+        <Footer />
       </div>
     </ThemeProvider>
   );

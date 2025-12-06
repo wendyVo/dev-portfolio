@@ -19,8 +19,11 @@ import {
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 import PROJECT_IMG_1 from "../assets/images/project-1.png";
-import PROJECT_IMG_2 from "../assets/projects/weather-dashboard-main.PNG";
-import { desc } from "framer-motion/client";
+import PROJECT_IMG_2 from "../assets/images/weather-dashboard-main.PNG";
+import PROJECT_IMG_3 from "../assets/images/travelImg.png";
+import PROJECT_IMG_4 from "../assets/images/scheduler-main.PNG";
+import PROJECT_IMG_5 from "../assets/images/burger.png";
+import PROJECT_IMG_6 from "../assets/images/emp-directory.png";
 
 export const SKILLS_CATEGORY = [
   {
@@ -59,6 +62,17 @@ export const SKILLS_CATEGORY = [
       { name: "MongoDB", level: 80, color: "bg-green-500" },
       { name: "Firebase", level: 75, color: "bg-purple-500" },
       { name: "SQLite", level: 70, color: "bg-red-500" },
+    ],
+  },
+  {
+    title: "DevOps",
+    icon: Cloud,
+    description: "Deploying and scaling applications",
+    skills: [
+      { name: "Docker", level: 80, color: "bg-blue-500" },
+      { name: "AWS", level: 70, color: "bg-green-500" },
+      { name: "Git", level: 90, color: "bg-purple-500" },
+      { name: "Vercel", level: 70, color: "bg-red-500" },
     ],
   },
 ];
@@ -123,6 +137,54 @@ export const PROJECTS = [
     githubURL: "https://github.com/wendyVo/weather-dashboard.git",
     featured: false,
     category: "Web App",
+  },
+  {
+    id: 3,
+    title: "Travel Planner",
+    description:
+      "Travel planner landing page that showcases destinations and travel ideas using responsive layouts.",
+    image: PROJECT_IMG_3,
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveURL: "https://github.com/wendyVo/Travel-Planner",
+    githubURL: "https://github.com/wendyVo/Travel-Planner",
+    featured: false,
+    category: "Frontend",
+  },
+  {
+    id: 4,
+    title: "Work Day Scheduler",
+    description:
+      "A simple calendar app that lets users save events for each hour of the day using localStorage.",
+    image: PROJECT_IMG_4,
+    tags: ["JavaScript", "jQuery", "Bootstrap", "localStorage"],
+    liveURL: "https://github.com/wendyVo/Work-Day-Scheduler",
+    githubURL: "https://github.com/wendyVo/Work-Day-Scheduler",
+    featured: false,
+    category: "Frontend",
+  },
+  {
+    id: 5,
+    title: "Burger Logger",
+    description:
+      "A burger logger that lets users input burger names, devour them, and keep track of eaten burgers using a MySQL backend.",
+    image: PROJECT_IMG_5,
+    tags: ["Handlebars", "MySQL", "Express", "Node.js"],
+    liveURL: "https://github.com/wendyVo/Burger-Logger",
+    githubURL: "https://github.com/wendyVo/Burger-Logger",
+    featured: false,
+    category: "Full Stack",
+  },
+  {
+    id: 6,
+    title: "Employee Directory",
+    description:
+      "React app that allows users to view and sort employees by name and filter by search.",
+    image: PROJECT_IMG_6,
+    tags: ["React", "Bootstrap", "Random User API"],
+    liveURL: "https://github.com/wendyVo/Employee-Directory",
+    githubURL: "https://github.com/wendyVo/Employee-Directory",
+    featured: false,
+    category: "Frontend",
   },
 ];
 export const PASSIONS = [
